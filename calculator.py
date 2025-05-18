@@ -17,6 +17,7 @@ for num in numberList[1:]:
 bitwiseXOrResult = numberList[0]
 for num in numberList[1:]:
     bitwiseXOrResult  ^= num   
+    bitwiseOrResult  |= num  
 print("The list of numbers:", numberList)
 print("List:", numberList)
 print("Sum:", sum(numberList))
@@ -58,12 +59,9 @@ elif operation == 'floor':
 elif operation == 'ceil':
     print(f"Ceil of {x}: {ceil(x)}")
     print(f"Ceil of {y}: {ceil(y)}")
-elif operation == 'and':
-    
-    if x.is_integer() and y.is_integer():
-        print(f"Bitwise AND: {int(x) & int(y)}")
-    else:
-        print("Bitwise AND requires integer inputs!")
-
 else:
     print("Invalid operation!")
+print("Random number")
+random = random.random()
+percentage = random * 100
+print("percentage of ",random ,"= ",percentage )
