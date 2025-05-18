@@ -1,4 +1,5 @@
 import numpy as np 
+import random as random
 from math import floor, ceil
 numbersInput = input("Enter numbers: ")
 numberList = [] 
@@ -15,7 +16,6 @@ print("Average:", sum(numberList) / len(numberList))
 print("Max:", max(numberList))
 print("Min:", min(numberList))
 print("Bitwise OR result:",bitwiseOrResult )
-
 print("For 2 Numbers")
 x = float(input("Enter first number: "))
 y = float(input("Enter second number: "))
@@ -49,3 +49,4 @@ elif operation == 'ceil':
     print(f"Ceil of {y}: {ceil(y)}")
 else:
     print("Invalid operation!")
+print("Random number", random.random())
