@@ -9,6 +9,11 @@ numbersArray = np.array(numberList)
 bitwiseOrResult = numberList[0]
 for num in numberList[1:]:
     bitwiseOrResult  |= num
+
+bitwiseAndResult = numberList[0]
+for num in numberList[1:]:
+    bitwiseAndResult &= num
+
 bitwiseXOrResult = numberList[0]
 for num in numberList[1:]:
     bitwiseXOrResult  ^= num   
@@ -19,6 +24,8 @@ print("Average:", sum(numberList) / len(numberList))
 print("Max:", max(numberList))
 print("Min:", min(numberList))
 print("Bitwise OR result:",bitwiseOrResult )
+print("Bitwise AND result:", bitwiseAndResult)
+
 print("Bitwise XOR result:",bitwiseXOrResult )
 print("For 2 Numbers")
 x = float(input("Enter first number: "))
@@ -51,9 +58,12 @@ elif operation == 'floor':
 elif operation == 'ceil':
     print(f"Ceil of {x}: {ceil(x)}")
     print(f"Ceil of {y}: {ceil(y)}")
+elif operation == 'and':
+    
+    if x.is_integer() and y.is_integer():
+        print(f"Bitwise AND: {int(x) & int(y)}")
+    else:
+        print("Bitwise AND requires integer inputs!")
+
 else:
     print("Invalid operation!")
-print("Random number")
-random = random.random()
-percentage = random * 100
-print("percentage of ",random ,"= ",percentage )
