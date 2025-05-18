@@ -12,6 +12,9 @@ for num in numberList[1:]:
 bitwiseAndResult = numberList[0]
 for num in numberList[1:]:
     bitwiseAndResult &= num
+bitwiseXOrResult = numberList[0]
+for num in numberList[1:]:
+    bitwiseXOrResult  ^= num  
 
 print("The list of numbers:", numberList)
 print("List:", numberList)
@@ -21,6 +24,7 @@ print("Max:", max(numberList))
 print("Min:", min(numberList))
 print("Bitwise OR result:",bitwiseOrResult )
 print("Bitwise AND result:", bitwiseAndResult)
+print("Bitwise XOR result:", bitwiseXOrResult)
 
 
 print("For 2 Numbers")
