@@ -53,4 +53,7 @@ elif operation == 'ceil':
     print(f"Ceil of {y}: {ceil(y)}")
 else:
     print("Invalid operation!")
-print("Random number", random.random())
+print("Random number")
+random = random.random()
+percentage = random * 100
+print("percentage of ",random ,"= ",percentage )
