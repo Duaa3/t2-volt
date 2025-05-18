@@ -8,7 +8,10 @@ for num in numbersInput.split(","):
 numbersArray = np.array(numberList)
 bitwiseOrResult = numberList[0]
 for num in numberList[1:]:
-    bitwiseOrResult  |= num  
+    bitwiseOrResult  |= num
+bitwiseXOrResult = numberList[0]
+for num in numberList[1:]:
+    bitwiseXOrResult  ^= num   
 print("The list of numbers:", numberList)
 print("List:", numberList)
 print("Sum:", sum(numberList))
@@ -16,6 +19,7 @@ print("Average:", sum(numberList) / len(numberList))
 print("Max:", max(numberList))
 print("Min:", min(numberList))
 print("Bitwise OR result:",bitwiseOrResult )
+print("Bitwise XOR result:",bitwiseXOrResult )
 print("For 2 Numbers")
 x = float(input("Enter first number: "))
 y = float(input("Enter second number: "))
